@@ -39,3 +39,6 @@ Now you are presented with the two modes explained above as an alternative to th
 ## If you're still not getting sound via HDMI
 
 In some rare cases, it is necessary to edit `config.txt` to force HDMI mode (as opposed to DVI mode, which does not send sound). You can do this by editing `/boot/config.txt` and setting `hdmi_drive=2`, then rebooting for the change to take effect.
+
+It may be necessary in some versions of Raspbian to uninstall PulseAudio, if Analog audio is desired in combination with 
+HDMI Video output. Because, PulseAudio tends to "hijack" the sound card.
